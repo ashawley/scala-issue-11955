@@ -1,0 +1,23 @@
+language: scala
+
+scala:
+  - 2.13.1
+  - 2.13.2-bin-d433c3e
+  - 2.13.2-bin-98c1648 # !
+  - 2.13.2             # !
+
+jdk:
+  - openjdk11
+
+before_cache:
+  - find $HOME/.sbt -name '*.lock' -delete
+  - find $HOME/.ivy2 -name 'ivydata-*.properties' -delete
+
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION doc
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot/
+    - $HOME/.coursier/
