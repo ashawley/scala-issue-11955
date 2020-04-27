@@ -4,7 +4,8 @@ crossScalaVersions := Seq(
   "2.13.1",
   "2.13.2-bin-d433c3e",
   "2.13.2-bin-98c1648", // !
-  "2.13.2"              // !
+  "2.13.2",             // !
+  "2.13.3-bin-273bf0f-SNAPSHOT"
 )
 
 apiMappings ++= {
@@ -19,3 +20,6 @@ apiMappings ++= {
 
 resolvers += "scala-integration" at
   "https://scala-ci.typesafe.com/artifactory/scala-integration/"
+
+resolvers += "scala-pr-validation-snapshots" at
+ "https://scala-ci.typesafe.com/artifactory/scala-pr-validation-snapshots/"
