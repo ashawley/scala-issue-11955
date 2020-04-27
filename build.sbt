@@ -5,7 +5,7 @@ crossScalaVersions := Seq(
   "2.13.2-bin-d433c3e",
   "2.13.2-bin-98c1648", // !
   "2.13.2",             // !
-  "2.13.3-bin-273bf0f-SNAPSHOT"
+  "2.13.3-bin-2e0337a-SNAPSHOT"
 )
 
 apiMappings ++= {
