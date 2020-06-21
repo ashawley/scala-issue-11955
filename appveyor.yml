@@ -6,7 +6,7 @@ environment:
     - SCALA_VERSION: 2.13.2-bin-d433c3e
     - SCALA_VERSION: 2.13.2-bin-98c1648 # !
     - SCALA_VERSION: 2.13.2             # !
-    - SCALA_VERSION: 2.13.3-bin-2e0337a-SNAPSHOT
+    - SCALA_VERSION: 2.13.3-bin-969bc1d
 
 platform:
   - x64
